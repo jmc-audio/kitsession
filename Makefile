@@ -2,11 +2,8 @@ GO15VENDOREXPERIMENT := 1
 GO ?= go
 BINARY = kitsession
 COVERAGEDIR = coverage
-ifdef CIRCLE_ARTIFACTS
-  COVERAGEDIR = $(CIRCLE_ARTIFACTS)/coverage
-endif
 
-all: build test cover
+all: fmt build test cover
 install-deps:
 	glide install
 fmt:
