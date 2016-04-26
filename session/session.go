@@ -16,6 +16,9 @@ type Session interface {
 func WithSession() endpoint.Middleware {
 	return func(next endpoint.Endpoint) endpoint.Endpoint {
 		return func(ctx context.Context, i interface{}) (interface{}, error) {
+			// Note that production systems *must* check these type assertions
+			// Use the Go-ish idiom, e.g., 
+			// if val, ok := ctx.Value("key").(string); ok { // safe in this scope ...}
 			sessions := *(ctx.Value("sessions").(*map[string]context.Context))
 			mtx := ctx.Value("session.mtx").(*sync.Mutex)
 			ttl := ctx.Value("session.ttl").(time.Duration)
