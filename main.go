@@ -41,7 +41,7 @@ func main() {
 
 	// HTTP REST Endpoint Listeners
 	bindings.StartHTTPListener(ctx)
-
+	// fixme: trigger codeclimate
 	logger.Log("fatal", <-errc)
 }
 
