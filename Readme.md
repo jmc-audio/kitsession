@@ -30,3 +30,5 @@ level=debug ts=2016-03-29T06:11:24Z message="init session" session_id=1
 ::1 - - [28/Mar/2016:23:11:24 -0700] "GET /id/1 HTTP/1.1" 200 16 "" "curl/7.30.0"
 {"Status":"OK"}
 ~~~~
+
+[![Circle CI](https://circleci.com/gh/jmc-audio/kitsession.svg?style=svg)](https://circleci.com/gh/jmc-audio/kitsession)
