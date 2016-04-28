@@ -32,4 +32,3 @@ level=debug ts=2016-03-29T06:11:24Z message="init session" session_id=1
 ~~~~
 
 [![Circle CI](https://circleci.com/gh/jmc-audio/kitsession.svg?style=svg)](https://circleci.com/gh/jmc-audio/kitsession)
-[![Code Climate](https://codeclimate.com/github/jmc-audio/kitsession/badges/gpa.svg)](https://codeclimate.com/github/jmc-audio/kitsession)
